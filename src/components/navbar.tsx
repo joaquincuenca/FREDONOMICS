@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import MobileNav from "./mobile-nav";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -132,7 +133,7 @@ export default function Navbar() {
         </div>
 
         <Button
-          className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-2 pr-4"
+          className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-2 pr-4 lg:inline-flex hidden"
           variant="outline"
         >
           <Button size="icon" variant="secondary" className="rounded-full">
@@ -140,6 +141,10 @@ export default function Navbar() {
           </Button>
           Join Us!
         </Button>
+
+        <div className="lg:hidden justify-self-end">
+          <MobileNav />
+        </div>
       </nav>
     </div>
   );
