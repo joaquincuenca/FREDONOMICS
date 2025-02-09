@@ -26,15 +26,15 @@
 }
 
 .title-content::before {
-  left: 300px;
+  left: 324px;
   top: 0;
   height: 85px;
   width: 45px;
 }
 .title-content::after {
   transform: rotate(-90deg);
-  left: 320px;
-  bottom: 7px;
+  left: 344px;
+  bottom: 1%;
   height: 85px;
   width: 45px;
 }
