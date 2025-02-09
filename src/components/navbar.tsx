@@ -10,6 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -47,7 +48,7 @@ export default function Navbar() {
 
         <div className="lg:flex hidden justify-center">
           <NavigationMenu>
-            <NavigationMenuList className="gap-8">
+            <NavigationMenuList className="gap-2 xl:gap-8">
               <NavigationMenuItem>
                 <NavigationMenuTrigger>About</NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -131,9 +132,12 @@ export default function Navbar() {
         </div>
 
         <Button
-          className="justify-self-end text-zinc-900 font-semibold"
-          variant="secondary"
+          className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-2 pr-4"
+          variant="outline"
         >
+          <Button size="icon" variant="secondary" className="rounded-full">
+            <ArrowUpRight />
+          </Button>
           Join Us!
         </Button>
       </nav>

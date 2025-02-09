@@ -1,0 +1,40 @@
+.title-h1-p1::before,
+.title-h1-p2::before,
+.title-content::before,
+.title-content::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.title-h1-p1::before,
+.title-h1-p2::before,
+.title-content::before,
+.title-content::after {
+  height: 80px;
+  width: 50px;
+  border-top-left-radius: 2.5rem;
+  box-shadow: 0 -2.5rem 0 0 rgb(255, 255, 255);
+}
+
+.title-h1-p1::before,
+.title-h1-p2::before {
+  right: -45px;
+  top: 0;
+  height: 85px;
+  width: 45px;
+}
+
+.title-content::before {
+  left: 300px;
+  top: 0;
+  height: 85px;
+  width: 45px;
+}
+.title-content::after {
+  transform: rotate(-90deg);
+  left: 320px;
+  bottom: 7px;
+  height: 85px;
+  width: 45px;
+}
