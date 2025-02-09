@@ -17,7 +17,7 @@ export function BenefitsCard({
 }: BenefitsCardProps) {
   return (
     <div
-      className="flex items-center px-3 py-2 rounded-full gap-2 text-white bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm text-sm shadow-lg absolute"
+      className="lg:flex items-center px-3 py-2 rounded-full gap-2 text-white bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm text-sm shadow-lg absolute hidden"
       style={{ top, bottom, left, right }}
     >
       <Check className="p-1 bg-white text-zinc-500 rounded-full" />

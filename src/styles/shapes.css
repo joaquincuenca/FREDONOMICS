@@ -1,7 +1,6 @@
 .title-h1-p1::before,
 .title-h1-p2::before,
-.title-content::before,
-.title-content::after {
+.title-content::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -9,8 +8,7 @@
 
 .title-h1-p1::before,
 .title-h1-p2::before,
-.title-content::before,
-.title-content::after {
+.title-content::before {
   height: 80px;
   width: 50px;
   border-top-left-radius: 2.5rem;
@@ -27,14 +25,7 @@
 
 .title-content::before {
   left: 324px;
-  top: 0;
-  height: 85px;
-  width: 45px;
-}
-.title-content::after {
-  transform: rotate(-90deg);
-  left: 344px;
-  bottom: 1%;
+  top: -14px;
   height: 85px;
   width: 45px;
 }
