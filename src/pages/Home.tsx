@@ -1,31 +1,11 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
+import { BENEFITS, CARDS } from "@/lib/constants";
+
 import { Button } from "@/components/ui/button";
 import { BenefitsCard } from "@/components/benefits-card";
-
-const benefits = [
-  {
-    title: "Tax-Free Retirement",
-    bottom: "30rem",
-    left: "30rem",
-  },
-  {
-    title: "Debt Elimination",
-    top: "15rem",
-    left: "40rem",
-  },
-  {
-    title: "Generational Wealth",
-    bottom: "15rem",
-    right: "5rem",
-  },
-  {
-    title: "Living Benefits",
-    top: "20rem",
-    right: "10rem",
-  },
-];
+import { CardStack } from "@/components/card-stock";
 
 export default function Home() {
   return (
@@ -44,27 +24,32 @@ export default function Home() {
             Build Wealth That Lasts for Generations
           </h1>
         </div>
-        <div className="space-y-4 md:space-y-8 bg-white w-fit lg:mt-[50%] title-content relative">
-          <p className="opacity-60 md:w-[300px]">
-            Unlock financial freedom with proven strategies for debt
-            elimination, tax-free retirement, and lasting generational wealth.
-          </p>
-          <Button
-            className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-2 pr-4"
-            variant="outline"
-          >
-            <Button size="icon" className="rounded-full">
-              <ArrowUpRight />
+        <div className="md:space-y-8 flex gap-14 flex-col justify-between bg-white w-fit lg:mt-[50%] title-content relative">
+          <div className="space-y-4">
+            <p className="opacity-60 md:w-[300px]">
+              Unlock financial freedom with proven strategies for debt
+              elimination, tax-free retirement, and lasting generational wealth.
+            </p>
+            <Button
+              className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-2 pr-4"
+              variant="outline"
+            >
+              <Button size="icon" className="rounded-full">
+                <ArrowUpRight />
+              </Button>
+              Get Your Free Consultation
             </Button>
-            Get Your Free Consultation
-          </Button>
+          </div>
+          <div className="pb-8">
+            <CardStack items={CARDS} />
+          </div>
         </div>
         <img
           src="/images/family.jpg"
           alt="Family in a field"
-          className="rounded-[2.5rem] relative -z-10 object-cover h-[86vh] w-full object-left lg:block hidden"
+          className="rounded-[2.5rem] relative -z-10 object-cover h-[86vh] w-full lg:block hidden"
         />
-        {benefits.map((benefit, index) => (
+        {BENEFITS.map((benefit, index) => (
           <React.Fragment key={index}>
             <BenefitsCard {...benefit} />
           </React.Fragment>
