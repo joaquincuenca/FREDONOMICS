@@ -9,7 +9,7 @@ import { CardStack } from "@/components/card-stock";
 
 export default function Home() {
   return (
-    <div className="h-full w-full relative flex md:grid xl:grid-cols-[1fr_0.3fr] flex-col gap-6">
+    <div className="w-full relative flex md:grid xl:grid-cols-[1fr_0.3fr] flex-col gap-6">
       <div className="relative md:grid md:grid-cols-[auto_1fr] flex flex-col gap-4 md:gap-6">
         <div className="md:h-full lg:absolute left-0 grid grid-rows-[auto_1fr] sm:gap-8">
           <div className="hidden lg:block">
