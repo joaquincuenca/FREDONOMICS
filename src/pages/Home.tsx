@@ -30,22 +30,41 @@ export default function Home() {
           />
         </div>
         <div className="md:space-y-8 flex gap-14 flex-col justify-between bg-white w-fit lg:mt-[50%] title-content relative">
-          <div className="space-y-4">
+          <div className="space-y-2 xl:space-y-4">
             <p className="opacity-60 md:w-[300px]">
               Unlock financial freedom with proven strategies for debt
               elimination, tax-free retirement, and lasting generational wealth.
             </p>
             <Button
-              className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-2 pr-4"
+              className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-1 pr-2 md:p-2 md:pr-4 md:text-sm text-xs"
               variant="outline"
             >
-              <Button size="icon" className="rounded-full">
-                <ArrowUpRight />
+              <Button size="icon" className="rounded-full size-6 md:size-9">
+                <ArrowUpRight className="!size-3 md:!size-5" />
               </Button>
               Get Your Free Consultation
             </Button>
           </div>
-          <div className="lg:pb-8">
+          <div className="lg:pb-8 xl:mt-0">
+            <div className="mb-14 space-y-2 md:hidden">
+              <h2 className="text-4xl uppercase">
+                Exclusive Webinars: Master Your Financial Future
+              </h2>
+              <p className="opacity-60">
+                Join industry experts in live sessions covering debt
+                elimination, tax-free retirement, and wealth-building
+                strategies. Reserve your spot today!
+              </p>
+              <Button
+                className="justify-self-end text-zinc-900 font-medium rounded-full w-fit h-fit p-1 pr-2 md:p-2 md:pr-4 md:text-sm text-xs"
+                variant="outline"
+              >
+                <Button size="icon" className="rounded-full size-6 md:size-9">
+                  <ArrowUpRight className="!size-3 md:!size-5" />
+                </Button>
+                Register Now
+              </Button>
+            </div>
             <CardStack items={CARDS} />
           </div>
         </div>
@@ -60,15 +79,17 @@ export default function Home() {
           </React.Fragment>
         ))}
       </div>
-      <div className="grid grid-rows-[1fr_auto] gap-6 pb-8">
+      <div className="grid grid-rows-[1fr_auto] gap-6 pb-8 mt-8 xl:mt-0">
         <img
           src="/images/video-placeholder.png"
           alt="Video Placeholder"
-          className="h-full w-full object-cover rounded-[2.5rem]"
+          className="h-full w-full object-cover rounded-[2.5rem] xl:row-start-1 row-start-2"
         />
-        <div>
-          <h2 className="text-lg">The Key to Financial Freedom</h2>
-          <p className="opacity-60 text-sm">
+        <div className="xl:space-y-0 xl:block grid grid-cols-2">
+          <h2 className="text-4xl sm:text-5xl xl:text-lg uppercase xl:normal-case">
+            The Key to Financial Freedom
+          </h2>
+          <p className="opacity-60 text-base xl:text-sm">
             Discover how strategic financial planning can help you eliminate
             debt, grow wealth, and secure your future—watch this quick 1-minute
             explainer.
