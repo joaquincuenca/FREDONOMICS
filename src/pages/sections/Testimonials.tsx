@@ -22,7 +22,11 @@ export default function Testimonials() {
         </p>
       </div>
       <div className="my-4 grid">
-        <InfiniteMovingCards items={TESTIMONIALS} direction="right" />
+        <InfiniteMovingCards
+          items={TESTIMONIALS}
+          direction="right"
+          speed="slow"
+        />
       </div>
     </div>
   );
