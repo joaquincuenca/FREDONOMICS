@@ -85,7 +85,7 @@ export default function Home() {
           alt="Video Placeholder"
           className="h-full w-full object-cover rounded-[2.5rem] xl:row-start-1 row-start-2"
         />
-        <div className="xl:space-y-0 xl:block grid grid-cols-2">
+        <div className="xl:space-y-0 xl:block grid sm:grid-cols-2">
           <h2 className="text-4xl sm:text-5xl xl:text-lg uppercase xl:normal-case">
             The Key to Financial Freedom
           </h2>

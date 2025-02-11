@@ -6,7 +6,7 @@ import { ArrowUpRight, BadgeCheck, BookOpenText } from "lucide-react";
 
 export default function BookAndFeatures() {
   return (
-    <div className="xl:mt-16 md:mt-12 mt-8 grid lg:grid-cols-2 xl:grid-cols-[1fr_0.6fr] gap-8">
+    <div className="xl:mt-16 md:mt-12 mt-8 grid xl:grid-cols-[1fr_0.6fr] gap-8">
       {/* Features */}
       <div className="w-full h-full bg-slate-100 rounded-[2.5rem] xl:p-8 p-6 grid md:grid-cols-[0.5fr_1fr] gap-4">
         <div className="space-y-4 flex flex-col items-center text-center md:text-left md:block">
