@@ -6,7 +6,32 @@ import { ArrowUpRight, BadgeCheck, BookOpenText } from "lucide-react";
 
 export default function BookAndFeatures() {
   return (
-    <div className="xl:mt-16 md:mt-12 mt-8 grid lg:grid-cols-2 xl:grid-cols-[0.6fr_1fr] gap-8">
+    <div className="xl:mt-16 md:mt-12 mt-8 grid lg:grid-cols-2 xl:grid-cols-[1fr_0.6fr] gap-8">
+      {/* Features */}
+      <div className="w-full h-full bg-slate-100 rounded-[2.5rem] xl:p-8 p-6 grid md:grid-cols-[0.5fr_1fr] gap-4">
+        <div className="space-y-4 flex flex-col items-center text-center md:text-left md:block">
+          <Badge variant="secondary" className="gap-1 mb-2 w-fit">
+            <BadgeCheck size={14} /> Benefits
+          </Badge>
+          <h1 className="lg:text-5xl text-4xl">
+            Financial Freedom, Built for You
+          </h1>
+          <p className="opacity-60">
+            A simple shift in mindset and spending can set you on the path to
+            financial freedom and lasting wealth
+          </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-1 xl:grid-cols-2 bg-white rounded-[2rem]">
+          {FEATURES.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              {...feature}
+              className={getBorderClasses(index)}
+            />
+          ))}
+        </div>
+      </div>
+
       {/* Book */}
       <div className="grid grid-cols-2 gap-8 bg-slate-100 rounded-[2.5rem]">
         <img
@@ -32,30 +57,6 @@ export default function BookAndFeatures() {
             </Button>
             Pre-Order Now!
           </Button>
-        </div>
-      </div>
-      {/* Features */}
-      <div className="w-full h-full bg-slate-100 rounded-[2.5rem] xl:p-8 p-6 grid md:grid-cols-[0.5fr_1fr] gap-4">
-        <div className="space-y-4 flex flex-col items-center text-center md:text-left md:block">
-          <Badge variant="secondary" className="gap-1 mb-2 w-fit">
-            <BadgeCheck size={14} /> Features
-          </Badge>
-          <h1 className="lg:text-5xl text-4xl">
-            Financial Freedom, Built for You
-          </h1>
-          <p className="opacity-60">
-            A simple shift in mindset and spending can set you on the path to
-            financial freedom and lasting wealth
-          </p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-1 xl:grid-cols-2 bg-white rounded-[2rem]">
-          {FEATURES.map((feature, index) => (
-            <FeatureCard
-              key={index}
-              {...feature}
-              className={getBorderClasses(index)}
-            />
-          ))}
         </div>
       </div>
     </div>
