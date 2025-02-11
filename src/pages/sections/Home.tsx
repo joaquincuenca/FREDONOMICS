@@ -26,7 +26,7 @@ export default function Home() {
           <img
             src="/images/family.jpg"
             alt="Family in a field"
-            className="rounded-xl object-cover h-full w-full hidden sm:block lg:hidden"
+            className="rounded-xl object-cover h-full w-full block lg:hidden"
           />
         </div>
         <div className="md:space-y-8 flex gap-14 flex-col justify-between bg-white w-fit lg:mt-[50%] title-content relative">

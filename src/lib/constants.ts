@@ -1,3 +1,5 @@
+import { HeartHandshake, PiggyBank, TrendingDown, Users } from "lucide-react";
+
 export const CARDS = [
   {
     id: 1,
@@ -86,5 +88,32 @@ export const TESTIMONIALS = [
       "At 92, I thought my options were limited, but D'Andrea showed me otherwise. I invested in an annuity to take advantage of the higher interest rates. My old CD just wasn’t giving me the returns I deserved. Now, my money is working harder for me, and I feel more secure about my finances.",
     name: "I. Kaufman",
     title: "Client",
+  },
+];
+
+export const FEATURES = [
+  {
+    icon: PiggyBank,
+    title: "Tax-Free Retirement",
+    description:
+      "Secure your future with smart financial strategies that allow you to grow and access your wealth without heavy tax burdens.",
+  },
+  {
+    icon: TrendingDown,
+    title: "Debt Elimination",
+    description:
+      "Break free from high-interest debt faster with proven strategies designed to reduce financial stress and build long-term stability.",
+  },
+  {
+    icon: Users,
+    title: "Generational Wealth",
+    description:
+      "Create a lasting financial legacy by making informed decisions that benefit not just you, but future generations.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Living Benefits",
+    description:
+      "Protect yourself and your loved ones with financial solutions that provide access to funds in times of need, ensuring peace of mind.",
   },
 ];
