@@ -6,6 +6,7 @@ import { BENEFITS, CARDS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { BenefitsCard } from "@/components/benefits-card";
 import { CardStack } from "@/components/card-stock";
+import { PromoVideo } from "@/components/promo-video";
 
 export default function Home() {
   return (
@@ -79,12 +80,8 @@ export default function Home() {
           </React.Fragment>
         ))}
       </div>
-      <div className="grid grid-rows-[1fr_auto] gap-6 pb-8 mt-8 xl:mt-0">
-        <img
-          src="/images/video-placeholder.png"
-          alt="Video Placeholder"
-          className="h-full w-full object-cover rounded-[2.5rem] xl:row-start-1 row-start-2"
-        />
+      <div className="grid grid-rows-[1fr_auto] gap-6 pb-8 mt-8 xl:mt-0 h-[86vh]">
+        <PromoVideo className="h-full w-full object-cover rounded-[2.5rem] xl:row-start-1 row-start-2" />
         <div className="xl:space-y-0 xl:block grid sm:grid-cols-2">
           <h2 className="text-4xl sm:text-5xl xl:text-lg uppercase xl:normal-case">
             The Key to Financial Freedom
