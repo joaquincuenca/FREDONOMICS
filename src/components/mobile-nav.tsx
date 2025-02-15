@@ -50,7 +50,7 @@ const MobileNav = () => {
       {
         title: "Webinars & Events",
         description: "Join our educational sessions and workshops",
-        href: "#",
+        href: "webinars-and-events",
       },
       {
         title: "Blog & Financial Education",
