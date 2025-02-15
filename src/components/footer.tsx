@@ -95,7 +95,7 @@ const SocialButton = ({ icon: Icon, href, label }: SocialLink) => (
   </Button>
 );
 
-export default function Footer() {
+export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (

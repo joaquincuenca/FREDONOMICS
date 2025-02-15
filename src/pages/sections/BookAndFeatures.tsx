@@ -74,7 +74,9 @@ const FeatureCard = ({
   description: string;
   className?: string;
 }) => (
-  <div className={`space-y-2 flex flex-col justify-center p-4 ${className}`}>
+  <div
+    className={`space-y-2 flex flex-col justify-center p-4 border-slate-100 ${className}`}
+  >
     <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
       <Icon size={16} />
     </div>
