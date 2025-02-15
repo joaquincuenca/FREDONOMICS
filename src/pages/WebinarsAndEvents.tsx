@@ -106,18 +106,7 @@ export default function WebinarsAndEvents() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto w-full">
           {WEBINAR_ITEMS.map((webinar, index) => (
-            <WebinarsCard
-              key={index}
-              title={webinar.title}
-              description={webinar.description}
-              host={webinar.host}
-              duration={webinar.duration}
-              oldPrice={webinar.oldPrice}
-              price={webinar.price}
-              isOnSale={webinar.isOnSale}
-              tags={webinar.tags}
-              //   imageSrc={webinar.imageSrc || "/images/image-placeholder.webp"}
-            />
+            <WebinarsCard key={index} {...webinar} />
           ))}
         </div>
         <Button className="mt-4 bg-black">Explore more</Button>
