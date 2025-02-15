@@ -1,5 +1,104 @@
 import { HeartHandshake, PiggyBank, TrendingDown, Users } from "lucide-react";
 
+export const WEBINAR_ITEMS = [
+  {
+    title: "Financial Freedom Fundamentals",
+    description:
+      "Master the basics of wealth building and debt elimination in this comprehensive introduction.",
+    host: "James Wilson",
+    duration: "4h",
+    oldPrice: "$99.99",
+    price: "$49.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "BASICS"],
+    imageSrc: "/images/webinar-financial-freedom.webp",
+  },
+  {
+    title: "Tax Strategies for Investors",
+    description:
+      "Learn legal tax minimization strategies to keep more of what you earn.",
+    host: "Sarah Johnson, CPA",
+    duration: "6h",
+    oldPrice: "$129.99",
+    price: "$79.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "TAX PLANNING"],
+    imageSrc: "/images/webinar-tax-strategies.webp",
+  },
+  {
+    title: "Real Estate Wealth Building",
+    description:
+      "Discover how to build generational wealth through strategic real estate investments.",
+    host: "Michael Roberts",
+    duration: "8h",
+    oldPrice: "$149.99",
+    price: "$89.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "REAL ESTATE"],
+    imageSrc: "/images/webinar-real-estate.webp",
+  },
+  {
+    title: "Retirement Planning Mastery",
+    description:
+      "Create a sustainable plan for a comfortable retirement without financial stress.",
+    host: "Jennifer Lopez, CFP",
+    duration: "5h",
+    oldPrice: "$119.99",
+    price: "$69.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "RETIREMENT"],
+    imageSrc: "/images/webinar-retirement.webp",
+  },
+  {
+    title: "Stock Market for Beginners",
+    description:
+      "Learn how to start investing in stocks with confidence and minimal risk.",
+    host: "David Chang",
+    duration: "4h",
+    oldPrice: "$89.99",
+    price: "$59.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "STOCKS"],
+    imageSrc: "/images/webinar-stocks.webp",
+  },
+  {
+    title: "Crypto Investing Fundamentals",
+    description:
+      "Understand blockchain technology and make informed cryptocurrency investments.",
+    host: "Alex Rivera",
+    duration: "3h",
+    oldPrice: "$79.99",
+    price: "$39.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "CRYPTO"],
+    imageSrc: "/images/webinar-crypto.webp",
+  },
+  {
+    title: "Debt Freedom Blueprint",
+    description:
+      "A step-by-step plan to eliminate all debt and build true financial independence.",
+    host: "Patricia Moore",
+    duration: "6h",
+    oldPrice: "$109.99",
+    price: "$59.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "DEBT ELIMINATION"],
+    imageSrc: "/images/webinar-debt-freedom.webp",
+  },
+  {
+    title: "Generational Wealth Planning",
+    description:
+      "Learn how to build and preserve wealth that lasts for generations to come.",
+    host: "Robert Washington",
+    duration: "7h",
+    oldPrice: "$139.99",
+    price: "$79.99",
+    isOnSale: true,
+    tags: ["WEBINAR", "LEGACY PLANNING"],
+    imageSrc: "/images/webinar-generational-wealth.webp",
+  },
+];
+
 export const CARDS = [
   {
     id: 1,
