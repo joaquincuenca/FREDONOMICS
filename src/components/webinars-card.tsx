@@ -21,6 +21,7 @@ interface WebinarsCardProps {
   imageSrc?: string;
   className?: string;
   lessons?: string[];
+  showTooltip?: boolean;
 }
 
 export function WebinarsCard({
@@ -34,6 +35,7 @@ export function WebinarsCard({
   tags = ["WEBINAR", "FINANCIAL EDUCATION"],
   imageSrc = "/images/image-placeholder.webp",
   lessons = [],
+  showTooltip = true,
   className,
 }: WebinarsCardProps) {
   return (
@@ -42,7 +44,7 @@ export function WebinarsCard({
         <TooltipTrigger>
           <div
             className={cn(
-              "w-full rounded-b-3xl shadow-md cursor-pointer text-left",
+              "w-full rounded-b-3xl shadow-md  text-left",
               className
             )}
           >
@@ -71,7 +73,7 @@ export function WebinarsCard({
                     {oldPrice}
                   </h2>
                 )}
-                <h2 className="font-bold text-primary">{price}</h2>
+                <h2 className="font-bold text-green-600">{price}</h2>
               </div>
               <div className="flex flex-wrap gap-2 uppercase text-sm md:text-base">
                 {tags.map((tag, index) => (
@@ -83,34 +85,36 @@ export function WebinarsCard({
             </div>
           </div>
         </TooltipTrigger>
-        <TooltipContent
-          side="left"
-          className="text-base bg-white border p-4 shadow-lg text-black space-y-3 max-w-md rounded-xl"
-        >
-          <h1 className="font-medium md:text-xl text-lg">{title}</h1>
-          <div className="flex flex-wrap gap-1 opacity-60 text-sm md:text-base">
-            <p>{duration} total hours •</p>
-            {tags.map((tag, index) => (
-              <p key={index}>
-                {tag}
-                {index < tags.length - 1 ? " •" : ""}
-              </p>
-            ))}
-          </div>
-          <p>{description}</p>
-          <ul className="space-y-1 pb-4 flex flex-col">
-            <h2 className="font-medium">What you will learn:</h2>
-            {lessons.map((lesson, index) => (
-              <li key={index} className="inline-flex gap-2 items-center">
-                <Check size={14} strokeWidth={4} />
-                {lesson}
-              </li>
-            ))}
-          </ul>
-          <Button className="w-full" variant="secondary">
-            Join Training Now
-          </Button>
-        </TooltipContent>
+        {showTooltip && (
+          <TooltipContent
+            side="left"
+            className="text-base bg-white border p-4 shadow-lg text-black space-y-3 max-w-md rounded-xl"
+          >
+            <h1 className="font-medium md:text-xl text-lg">{title}</h1>
+            <div className="flex flex-wrap gap-1 opacity-60 text-sm md:text-base">
+              <p>{duration} total hours •</p>
+              {tags.map((tag, index) => (
+                <p key={index}>
+                  {tag}
+                  {index < tags.length - 1 ? " •" : ""}
+                </p>
+              ))}
+            </div>
+            <p>{description}</p>
+            <ul className="space-y-1 pb-4 flex flex-col">
+              <h2 className="font-medium">What you will learn:</h2>
+              {lessons.map((lesson, index) => (
+                <li key={index} className="inline-flex gap-2 items-center">
+                  <Check size={14} strokeWidth={4} />
+                  {lesson}
+                </li>
+              ))}
+            </ul>
+            <Button className="w-full" variant="secondary">
+              Join Training Now
+            </Button>
+          </TooltipContent>
+        )}
       </Tooltip>
     </TooltipProvider>
   );

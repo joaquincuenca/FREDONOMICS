@@ -45,11 +45,28 @@ export default function WebinarsAndEvents() {
       {/* courses header */}
       <div className="grid md:grid-cols-2 xl:grid-cols-[0.8fr_1fr] gap-8">
         <div className="relative h-[500px] flex items-center justify-center md:row-start-1 row-start-2">
-          <div className="relative w-72 h-96">
-            <WebinarsCard className="absolute top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2 rotate-12 z-10 shadow-2xl" />
+          {/* blue circle shape */}
+          <div className="absolute bottom-16 left-12 w-20 h-20 bg-blue-300 rounded-full opacity-50 z-0 animate-pulse"></div>
+
+          {/* red rounded rectangle */}
+          <div className="absolute top-24 right-16 w-16 h-12 bg-red-400 rounded-lg opacity-40 z-0 rotate-12"></div>
+
+          {/* Small blue square */}
+          <div className="absolute top-32 left-24 w-8 h-8 bg-blue-400 rounded-sm opacity-60 z-0 -rotate-12"></div>
+
+          {/* Small red circle */}
+          <div className="absolute bottom-32 right-20 w-10 h-10 bg-red-300 rounded-full opacity-50 z-0"></div>
+
+          {/* WebinarsCard container */}
+          <div className="relative w-60 md:w-72 h-96 z-10">
             <WebinarsCard
-              className="absolute top-1/2 left-[30%] -translate-x-1/2 -translate-y-1/2 -rotate-12 opacity-70 z-0"
+              className="absolute top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2 rotate-12 z-20 shadow-2xl cursor-default"
+              showTooltip={false}
+            />
+            <WebinarsCard
+              className="absolute top-1/2 left-[30%] -translate-x-1/2 -translate-y-1/2 -rotate-12 z-10 cursor-default"
               title="Other Title"
+              showTooltip={false}
             />
           </div>
         </div>
@@ -101,7 +118,9 @@ export default function WebinarsAndEvents() {
         <div className="space-y-4 flex flex-col items-center">
           <Badge variant="secondary">Wealthy Mastery Certified</Badge>
           <h2 className="text-center text-4xl md:text-5xl">
-            Your Path to Financial Knowledge Has No Limits
+            Your Path to Financial
+            <br />
+            Knowledge Has No Limits
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto w-full">
