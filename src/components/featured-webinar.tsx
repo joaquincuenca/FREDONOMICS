@@ -85,7 +85,7 @@ export function FeaturedWebinar() {
   return (
     <div className="space-y-4">
       <Badge variant="secondary">Upcoming Event</Badge>
-      <h1 className="text-4xl md:text-5xl xl:text-7xl font-bold">
+      <h1 className="text-4xl md:text-5xl xl:text-7xl">
         {upcomingWebinar.title}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-[0.5fr_1fr] gap-4">
