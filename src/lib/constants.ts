@@ -16,6 +16,7 @@ export const WEBINAR_ITEMS = [
       "Managing Debt Effectively",
       "Saving Strategies",
     ],
+    date: "2025-02-20",
   },
   {
     title: "Tax Strategies for Investors",
@@ -32,6 +33,7 @@ export const WEBINAR_ITEMS = [
       "Deductions and Credits",
       "Tax-Advantaged Accounts",
     ],
+    date: "2025-02-22",
   },
   {
     title: "Real Estate Wealth Building",
@@ -48,6 +50,7 @@ export const WEBINAR_ITEMS = [
       "Financing Strategies",
       "Managing Rental Income",
     ],
+    date: "2025-02-25",
   },
   {
     title: "Retirement Planning Mastery",
@@ -64,6 +67,7 @@ export const WEBINAR_ITEMS = [
       "Investment Strategies",
       "Managing Withdrawals",
     ],
+    date: "2025-02-27",
   },
   {
     title: "Stock Market for Beginners",
@@ -80,6 +84,7 @@ export const WEBINAR_ITEMS = [
       "Analyzing Stocks",
       "Building a Portfolio",
     ],
+    date: "2025-03-01",
   },
   {
     title: "Crypto Investing Fundamentals",
@@ -96,6 +101,7 @@ export const WEBINAR_ITEMS = [
       "Types of Cryptocurrencies",
       "Risk Management in Crypto",
     ],
+    date: "2025-03-03",
   },
   {
     title: "Debt Freedom Blueprint",
@@ -112,6 +118,7 @@ export const WEBINAR_ITEMS = [
       "Snowball vs. Avalanche Method",
       "Long-Term Financial Stability",
     ],
+    date: "2025-03-06",
   },
   {
     title: "Generational Wealth Planning",
@@ -128,6 +135,7 @@ export const WEBINAR_ITEMS = [
       "Investing for Future Generations",
       "Estate Planning Essentials",
     ],
+    date: "2025-03-08",
   },
 ];
 

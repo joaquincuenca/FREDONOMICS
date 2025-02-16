@@ -1,13 +1,16 @@
+import { ArrowUpRight, Check } from "lucide-react";
+import { WEBINAR_ITEMS } from "@/lib/constants";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
+import { FeaturedWebinar } from "@/components/featured-webinar";
 import { WebinarsCard } from "@/components/webinars-card";
-import { WEBINAR_ITEMS } from "@/lib/constants";
-import { ArrowUpRight, Check } from "lucide-react";
 
 export default function WebinarsAndEvents() {
   return (
-    <div className="space-y-16 mb-16">
+    <div className="space-y-16 mb-16 max-w-7xl mx-auto w-full">
       {/* header if user is not registered */}
       <div className="grid md:grid-cols-[1fr_0.5fr] gap-8">
         {/* title */}
@@ -111,6 +114,10 @@ export default function WebinarsAndEvents() {
             </Button>
           </div>
         </div>
+      </div>
+
+      <div>
+        <FeaturedWebinar />
       </div>
 
       {/* courses */}
