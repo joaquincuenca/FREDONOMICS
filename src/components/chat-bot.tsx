@@ -174,8 +174,11 @@ export function ChatBot() {
         align="end"
         className="p-0 rounded-xl max-w-lg h-[32rem] border-none flex flex-col"
       >
-        <div className="bg-secondary rounded-t-xl text-secondary-foreground font-medium p-3">
-          <span className="text-black">Wealthy</span>Debt's AI Assistant
+        <div className="bg-secondary rounded-t-xl text-secondary-foreground font-medium p-3 inline-flex items-center gap-2">
+          <img src="logo.png" alt="Fredonomics Brand Logo" className="w-8" />
+          <span>
+            <span className="text-black">Wealthy</span>Debt's AI Assistant
+          </span>
         </div>
 
         <div className="p-3 flex-1 overflow-y-auto space-y-4">

@@ -48,8 +48,14 @@ export function Navbar() {
       {isTheirAnAnnouncement && <AnnouncementBar />}
       <div className="py-6 px-8">
         <nav className="grid grid-cols-[auto_1fr_auto] items-center">
-          <Link to="/home" className="text-2xl font-bold">
-            <span className="text-secondary">WEALTHY</span>DEBT
+          <Link
+            to="/home"
+            className="text-2xl font-bold inline-flex items-center gap-2"
+          >
+            <img src="logo.png" alt="Fredonomics Brand Logo" className="w-8" />
+            <span>
+              <span className="text-secondary">WEALTHY</span>DEBT
+            </span>
           </Link>
 
           <div className="lg:flex hidden justify-center">

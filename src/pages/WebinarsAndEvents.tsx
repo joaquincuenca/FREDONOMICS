@@ -22,8 +22,11 @@ export default function WebinarsAndEvents() {
         </div>
         {/* form */}
         <div className="self-end space-y-2 flex flex-col items-center">
-          <Input placeholder="Enter your email" />
-          <Button className="w-full bg-black">
+          <Input
+            placeholder="Enter your email"
+            className=" lg:placeholder:text-xl lg:text-xl lg:h-fit lg:p-4"
+          />
+          <Button className="w-full bg-black lg:text-xl lg:p-4 lg:h-fit">
             Join our Growing Community!
           </Button>
           <div className="flex items-center gap-2 text-xs">
