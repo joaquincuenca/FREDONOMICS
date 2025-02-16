@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import { ChatBot } from "@/components/chat-bot";
 
 export default function AppLayout() {
   return (
@@ -12,6 +13,7 @@ export default function AppLayout() {
           <Outlet />
         </main>
       </div>
+      <ChatBot />
       <Footer />
     </div>
   );
