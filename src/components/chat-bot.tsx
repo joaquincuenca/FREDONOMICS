@@ -31,7 +31,8 @@ export function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [isGuest, setIsGuest] = useState(true);
+  // const [isGuest, setIsGuest] = useState(true);
+  const isGuest = true;
   const username = "Guest";
 
   const handleOpenChange = (open: boolean) => {
